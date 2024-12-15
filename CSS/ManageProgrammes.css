@@ -1,0 +1,82 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #0083cb;
+    --main-color-alt: #ed174c;
+    --second-color: #8dc63f;
+    --second-color-alt: #fff200;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Signika', sans-serif;
+    font-weight: 400; /* Regular weight */
+}
+a {
+    text-decoration: none !important;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Rules */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* Start Side Bar */
+.sidebar img {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+/* End Side Bar */
+h1.p-relative {
+    color: var(--main-color);
+}
+@media (max-width: 767px) {
+    img[src="Images/Young Engineers.png"] {
+        display: none;
+    }
+}
+.button {
+    margin: 10px 15px;
+}
+input.b-none {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
